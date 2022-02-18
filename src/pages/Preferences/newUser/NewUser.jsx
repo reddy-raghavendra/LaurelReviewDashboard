@@ -49,7 +49,7 @@ export default function NewUser() {
     }else{
       genderType=genders[2].value
     }
-    if(document.getElementById("active").value==true){
+    if(document.getElementById("active").value == "yes"){
       var active = true
     }else{
       var active = false
