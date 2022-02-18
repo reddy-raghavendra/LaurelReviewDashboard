@@ -1,3 +1,4 @@
+import React from 'react'
 import "./IssueList.css";
 import axios from "axios";
 import { DataGrid } from "@material-ui/data-grid";
@@ -57,6 +58,10 @@ export default function ProductList() {
 
   return (
     <div className="productList">
+
+<Link to="/newissue">
+          <button className="issueAddButton">Create Issue</button>
+        </Link>
       <DataGrid
         rows={data}
         disableSelectionOnClick
@@ -64,6 +69,11 @@ export default function ProductList() {
         pageSize={8}
         checkboxSelection
       />
+      
     </div>
+
+   
   );
+  
+  
 }
