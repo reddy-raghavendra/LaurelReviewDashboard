@@ -90,6 +90,10 @@ export default function UserList() {
 
   return (
     <div className="userList">
+
+<Link to="/newUser">
+          <button className="issueAddButton">Create User</button>
+        </Link>
       <DataGrid
         rows={data}
         disableSelectionOnClick
